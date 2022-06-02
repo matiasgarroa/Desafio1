@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0 ,maximum-scale=1.0, minimum-scale=1.0">
+        
+    </head>
+    <body>
+        <div class="contenedor">
+            <header class="encabezado">
+                <img id="logo" src="imagenes/Logo.png" alt="Logo Alura">
+            </header>
+            <section class="contenido">
+                <textarea name="text" id="texto" class="texto" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="frame1">
+                    <img src="imagenes/Info.png" alt="Info" class="text-info">
+                    <p class="info">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="frame3">
+                    <button id="encriptar" onclick="botonEncriptar()"><label id="texto-encriptar">Encriptar</label></button>
+                    <button id="desencriptar" onclick="botonDesencriptar()"><label id="texto-desencriptar">Desencriptar</label></button>
+                </div>
+            </section>
+            <aside class="contenido-lateral">
+                <article class="inicio" >
+                    <img src="imagenes/Muñeco.png" alt="Ningún mensaje fue encontrado" class="chica">
+                    <div class="frame5">
+                        <p class="mensaje1">Ningún mensaje fue encontrado</p>
+                        <p class="mensaje2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </article>
+                <article class="resultado">
+                    <textarea readonly name="texto-resultado" id="texto-resultado"></textarea>
+                    <button id="copiar" onclick="botonCopiar()"><label id="texto-copiar">Copiar</label></button>
+                </article>
+            </aside>
+            <footer>
+                <p class="pie-pagina"><a href="https://www.linkedin.com/in/mat%C3%ADasgarroalou/">&copy Matías Garro Alou - Desafío 1 Alura</a></p>
+            </footer>
+        </div>
+    </body>
+    <script src="js/codificar.js"></script>
+</html>
